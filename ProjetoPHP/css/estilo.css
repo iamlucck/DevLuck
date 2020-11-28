@@ -1,0 +1,93 @@
+*{
+    margin:0px;
+    padding:0px;
+      
+    
+}
+
+body{
+    background-image: url("../img/fundologin.jpg"); background-color: black;
+    background-position: right -10% bottom 100%; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Arial;
+
+}
+
+
+input{
+    display: block;
+    background-color: black;
+    color: white;
+    height: 55px;
+    width: 380px;
+    margin: 10px;
+    border-radius: 7px;
+    border: 1px solid white;
+    font-size: 16pt;
+    padding: 10px;
+    outline: none;
+
+}
+
+div#form-corpo {
+    /* background-color: red; */
+    width: 400px; 
+    margin: 150px 150px auto;
+}
+div#form-corpo h1{
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+input[type=submit]{
+    background-color: #e37200;
+    border: none;
+    color: black;
+    height: 55px;
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: white;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: white;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color:white;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color:white;
+  }
+
+
+
+div#cadastrosucesso{
+    width: 420px;
+    margin:10px 150px auto;
+    padding: 10px;
+    background-color: rgba(50,205,50,.3);
+    border: 1px solid rgb(34,139,34);
+}
+
+div.msgerro{
+    width: 420px;
+    margin:10px 150px auto;
+    padding: 10px;
+    background-color: rgba(250,128,114,.3);
+    border: 1px solid rgb(165,42,42);
+}
