@@ -32,7 +32,7 @@ if(isset($_POST['email']))
         {
             if($a->login($email,$senha))
             {
-                header("location: meuacesso.php");         
+                header("location: meuacesso.php");
             }
             else
             {

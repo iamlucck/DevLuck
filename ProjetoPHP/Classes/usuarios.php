@@ -67,5 +67,23 @@ Class Usuario
         }
     }
 
-}
+    private function list($nome, $email)
+    {
+        global $pdo;
+        $sql = $pdo->prepare("SELECT * FROM usuarios");
+        $sql->execute();
+        if($sql->rowCount() > 0)
+        {
+            $dado = $sql->fetch();
+            $testenome = $dado['nome'];
+            echo($testenome);
+            return true;
+        }
+        else
+        {
+            echo "Não tem cadastro";
+            return false; //Não tem cadastro
+        }
+    }
+}    
 ?>
